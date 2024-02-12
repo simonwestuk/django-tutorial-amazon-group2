@@ -31,7 +31,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     #'localhost',
     #'127.0.0.1'
-    #'vscode-django-tutorial.azurewebsites.net'  # Sample name only!
+    'django-amazon-group2.onrender.com'
 ]
 
 # Application definition
