@@ -2,12 +2,12 @@ name: Test
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
 
-    runs-on: ubuntu-latest2
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
