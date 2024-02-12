@@ -34,4 +34,4 @@ RUN chmod g+w /app
 RUN chmod g+w /app/db.sqlite3
 
 # Make sure dependencies are installed
-RUN python -m pip install -r requirements.txt
+#RUN python3 -m pip install -r requirements.txt
