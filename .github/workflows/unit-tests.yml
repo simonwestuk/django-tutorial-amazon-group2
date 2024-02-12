@@ -8,18 +8,18 @@ jobs:
   build:
     runs-on: ubuntu-latest2
 
-  steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.9
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.9
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
 
-    - name: Install dependencies
-    - run: |
-        python -m pip install --upgrade pip
-        python install -r requirements.txt
+      - name: Install dependencies
+      - run: |
+          python -m pip install --upgrade pip
+          python install -r requirements.txt
 
-    - name: Run Unit Tests
-      run: |
-        python manage.py test
+      - name: Run Unit Tests
+        run: |
+          python manage.py test
