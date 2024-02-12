@@ -34,5 +34,6 @@ RUN chmod g+w /app
 RUN chmod g+w /app/db.sqlite3
 
 # Make sure dependencies are installed
+RUN apk add- --no-cahce build-base libffi-dev
 RUN python3 -m pip install --upgrade pip setuptools wheel
 RUN python3 -m pip install -r requirements.txt
